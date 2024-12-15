@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para nuestro contenedor "header" */
+
+header {
+    background-color: #981515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+
+/* Dentro de header, estilos para el h1 */
+
+header h1 {
+    color: rgb(186, 115, 28);
+    font-size: 1.5rem;
+}
+
+
+/* Cambiamos los estilos de la lista no ordenada */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #464ab1;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+/* Estilos del footer */
+
+footer {
+    background-color: #750b4c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Primera seccion, position */
+
+.position-container {
+    background-color: rgb(225, 14, 14);
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.position-absolute {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(167, 46, 201);
+    padding: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+}
+
+.position-fixed {
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+
+
+/* Segunda Seccion, Z-Index */
+
+.zindex-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(29, 187, 195);
+}
+
+.zindex-box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.zindex-1 {
+    background-color: rgb(230, 106, 176);
+}
+
+.zindex-2 {
+    background-color: rgb(88, 243, 88);
+}
+
+.zindex-3 {
+    background-color: rgb(255, 255, 0);
+}
